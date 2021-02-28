@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  background: linear-gradient(to bottom right, #9263e0, #f79766);
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.main-cont {
+  width: 315px;
+  height: 420px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: 0 0 3px 0 rgba(126, 151, 179, 0.5), 4px 4px 16px 0 rgba(126, 151, 179, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.input-area{
+  width: 315px;
+  height: 120px;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+}
+.dots-cont{
+  position: absolute;
+  display: flex;
+  top: 18px;
+  left: 18px;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ced3e2;
+  margin: 0 2px;
+}
+.past-value{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  color: #00000066;
+  font-size: 20px;
+}
+input{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: none;
+  font-size: 48px;
+  width: 310px;
+  outline: none;
+  text-align: right;  
+  margin: 16px;
+  letter-spacing: 2px;
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+input:focus{
+  border-right: 1px solid #000;
+}
+
+.keypad{
+  display: flex;
+}
+.keypad div{
+  display: flex;
+}
+
+.left-section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 237px;
+}
+
+.keypad .right-section{
+  display: block;
+  background: linear-gradient(#f8d462, #f89b65);
+}
+
+.keypad .right-section .cell{
+  color: #fff;
+  font-size: 30px;
+}
+
+.top-section{
+  display: flex;
+  background: #f2e1fd;
+}
+.numpad{
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(to bottom right, #f8e3fe, #e0eefe);
+}
+.bottom-section{
+  display: flex;
+  width: 100%;
+}
+.double-width{
+  flex-grow: 2;
+}
+
+.cell{
+  border: none;
+  border-top: 1px solid #666;
+  border-right: 1px solid #666;
+  width: 79px;
+  height: 60px;
+  box-sizing: border-box;
+  line-height: 60px;
+  padding: 0;
+  padding-left: 30px;
+  font-size: 26px;
+  font-weight: 300;
+  background: transparent;
+  text-align: left;
 }
