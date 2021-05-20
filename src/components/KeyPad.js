@@ -15,7 +15,7 @@ const Cell = ({text, handleClick}) => {
 
 const KeyPad = ({handleClick}) => {
   const topKeys = ['C', '+/-', '%'];
-  const rightKeys = ["÷","×","-","+","="];
+  const rightKeys = ["÷","×","−","+","="];
   const numKeys = ['7','8','9','4','5','6','1','2','3','0','.'];
   return(
     <div className="keypad">
