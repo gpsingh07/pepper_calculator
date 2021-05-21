@@ -1,7 +1,8 @@
 import React from 'react'
 
 const InputArea = ({value, pastValue, handleChange, handleClear}) => {  
-  return(
+/* Calculator input area at the top  */
+return(
     <div className='input-area'>
       <div className='dots-cont'>
         <div className='dot'></div>
